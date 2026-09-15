@@ -63,9 +63,7 @@
   .custom-image{display:none}
   .custom-section{
     min-height:620px;
-    background:
-      linear-gradient(180deg,rgba(20,17,13,.30),rgba(20,17,13,.80)),
-      url('assets/measure.jpg') center/cover no-repeat;
+    background:#181713;
   }
   .custom-copy{color:#fff;padding:90px 22px}
   .custom-copy .eyebrow{color:#fff;opacity:.72}
