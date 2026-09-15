@@ -27,3 +27,58 @@
 @media (max-width:520px){.hero-inner-cover{padding-top:26vh}.hero-inner-cover h1{font-size:25vw;line-height:.82}.statement-photo{width:100%}}
 
 .hero-budget{display:inline-flex;align-items:center;gap:18px;margin-top:30px;padding:15px 21px;background:rgba(248,244,236,.96);color:#171511;text-decoration:none;text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:800;border:1px solid rgba(255,255,255,.9);box-shadow:0 12px 28px rgba(0,0,0,.18);transition:transform .25s ease,box-shadow .25s ease,background .25s ease}.hero-budget span{font-size:15px;line-height:1}.hero-budget:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(0,0,0,.24);background:#fffdf8}
+
+
+/* V1.14 mobile refinement only */
+@media (max-width:900px){
+  .nav{z-index:31}
+  .menu-toggle{
+    position:relative;
+    width:42px;
+    height:42px;
+    padding:0;
+    margin-left:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:5px;
+    background:rgba(16,15,13,.82);
+    border:1px solid rgba(255,255,255,.42);
+    border-radius:2px;
+    box-shadow:0 8px 20px rgba(0,0,0,.16);
+  }
+  .menu-toggle span{display:block;width:20px;height:1.5px;background:#fff;transition:transform .22s ease,opacity .22s ease;width:21px}
+  .menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+  .menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+
+  .mobile-menu{
+    z-index:30;
+    min-height:100svh;
+    padding-top:92px;
+    padding-bottom:36px;
+  }
+
+  .custom-image{display:none}
+  .custom-section{
+    min-height:620px;
+    background:
+      linear-gradient(180deg,rgba(20,17,13,.30),rgba(20,17,13,.80)),
+      url('assets/measure.jpg') center/cover no-repeat;
+  }
+  .custom-copy{color:#fff;padding:90px 22px}
+  .custom-copy .eyebrow{color:#fff;opacity:.72}
+  .custom-copy h2{color:#fff}
+  .custom-copy>p:not(.eyebrow){color:rgba(255,255,255,.82);opacity:1}
+  .custom-copy .process-grid{border-top-color:rgba(255,255,255,.28)}
+  .custom-copy .process-grid span,.custom-copy .process-grid small{color:rgba(255,255,255,.62)}
+  .custom-copy .process-grid strong{color:#fff}
+  .custom-copy .dark-link{color:#fff}
+
+  .rest-section{position:relative;display:block;min-height:620px;background:#181713 url('assets/bedroom.jpg') center/cover no-repeat}
+  .rest-image{display:none}
+  .rest-section::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,11,9,.20),rgba(12,11,9,.78))}
+  .rest-copy{position:relative;z-index:1;min-height:620px;padding:90px 22px;background:transparent;justify-content:flex-end}
+  .rest-copy p:not(.eyebrow){color:rgba(255,255,255,.84)}
+}
