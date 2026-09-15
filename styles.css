@@ -82,3 +82,19 @@
   .rest-copy{position:relative;z-index:1;min-height:620px;padding:90px 22px;background:transparent;justify-content:flex-end}
   .rest-copy p:not(.eyebrow){color:rgba(255,255,255,.84)}
 }
+
+
+/* V1.15 mobile fixes */
+@media (max-width:900px){
+  .hero-inner-cover .hero-eyebrow{
+    color:#fff;
+    opacity:1;
+    font-weight:700;
+    text-shadow:0 2px 16px rgba(0,0,0,.75);
+  }
+  .hero-inner-cover .hero-eyebrow{
+    font-size:10px;
+    letter-spacing:.16em;
+  }
+  .custom-image{display:none !important;}
+}
